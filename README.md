@@ -94,6 +94,7 @@ Charts.png - Dashboard charts/trends screenshot
 
 README.md - Project documentation
 
+LICENSE
 
 ##  Author
 **Ritika** - Final-year Integrated M.Tech, Geophysical Technology, IIT Roorkee
