@@ -76,23 +76,23 @@ File: [ecommerce_sales_analytics_dashboard.pbix](./ecommerce_sales_analytics_das
 
 
 ##  Repository Structure
-ecommerce_sales_analytics_raw.csv          # Raw dataset from Kaggle
+ecommerce_sales_analytics_raw.csv - Raw dataset from Kaggle
 
-ecommerce_sales_cleaned.csv                 # Cleaned dataset (post-SQL processing)
+ecommerce_sales_cleaned.csv - Cleaned dataset (post-SQL processing)
 
-ecommerce_sales_dashboard.csv               # Dashboard-ready dataset
+ecommerce_sales_dashboard.csv - Dashboard-ready dataset
 
-sales_summary.csv                           # Aggregated summary table
+sales_summary.csv - Aggregated summary table
 
-cleaning_and_eda.sql                        # SQL script: cleaning, EDA, CTEs, window functions
+cleaning_and_eda.sql - SQL script: cleaning, EDA, CTEs, window functions
 
-ecommerce_sales_analytics_dashboard.pbix     # Power BI dashboard file
+ecommerce_sales_analytics_dashboard.pbix - Power BI dashboard file
 
-KPI_Cards.png                                # Dashboard KPI cards screenshot
+KPI_Cards.png - Dashboard KPI cards screenshot
 
-Charts.png                                   # Dashboard charts/trends screenshot
+Charts.png - Dashboard charts/trends screenshot
 
-README.md                                    # Project documentation
+README.md - Project documentation
 
 
 ##  Author
