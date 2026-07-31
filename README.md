@@ -1,8 +1,8 @@
 # E-commerce Sales Analytics Dashboard
-End-to-end sales analytics project — from raw data to business recommendations — using **SQL** for cleaning/EDA and **Power BI** for dashboarding and visualization.
+End-to-end sales analytics project - from raw data to business recommendations — using **SQL** for cleaning/EDA and **Power BI** for dashboarding and visualization.
 
 ##  Project Overview
-This project analyzes e-commerce transaction data end-to-end, from raw Kaggle data to executive-level business recommendations. Data cleaning and exploratory analysis were performed in **SQL** — including correcting inconsistent date formats, and using **CTEs** and **window functions** to surface trends in revenue, customer ratings, and discount effectiveness. The cleaned data was connected to **Power BI** to build an interactive dashboard with custom **DAX measures**, KPI cards, and trend visualizations. The analysis uncovered a key business risk — high-revenue orders skewing toward poor customer ratings — along with actionable recommendations on payment mix, discount strategy, and category diversification.
+This project analyzes e-commerce transaction data end-to-end, from raw Kaggle data to executive-level business recommendations. Data cleaning and exploratory analysis were performed in **SQL** - including correcting inconsistent date formats, and using **CTEs** and **window functions** to surface trends in revenue, customer ratings, and discount effectiveness. The cleaned data was connected to **Power BI** to build an interactive dashboard with custom **DAX measures**, KPI cards, and trend visualizations. The analysis uncovered a key business risk - high-revenue orders skewing toward poor customer ratings - along with actionable recommendations on payment mix, discount strategy, and category diversification.
 
 **Workflow:** Kaggle dataset → SQL cleaning & EDA → Power BI dashboard → Business insights
 
@@ -29,11 +29,11 @@ Dataset sourced from **Kaggle** (e-commerce sales transactions).
 All cleaning and exploratory analysis was performed in **SQL**, then connected directly to Power BI.
 
 **Key steps:**
-- **Date format correction** — the main data quality hurdle; `order_date` was stored in an inconsistent/invalid format and had to be standardized before any time-based analysis was possible.
+- **Date format correction** : the main data quality hurdle; `order_date` was stored in an inconsistent/invalid format and had to be standardized before any time-based analysis was possible.
 - **Null/duplicate handling** and column-level validation checks.
-- **Exploratory analysis using CTEs (Common Table Expressions)** to break down complex aggregations into readable, reusable logic.
-- **Window functions** applied for running totals, rankings, and period-over-period comparisons (e.g., revenue by category/region over time).
-
+- **Exploratory analysis using CTEs (Common Table Expressions)** :  to break down complex aggregations into readable, reusable logic.
+- **Window functions** : applied for running totals, rankings, and period-over-period comparisons (e.g., revenue by category/region over time).
+- **Feature engineering** : derived `order_year`, `order_month`, `order_quarter`, and `month_name` from `order_date`, along with categorical buckets `discount_category` (Low/Medium/High) and `rating_category` (Poor/Average/Good/Excellent) to build the dashboard-ready table.
 Full logic available in [`cleaning_and_eda.sql`](./cleaning_and_eda.sql).
 
 ##  Dashboard (Power BI)
@@ -56,8 +56,6 @@ The cleaned dataset was connected to **Power BI via SQL Workbench integration**,
 
 File: [`ecommerce_sales_analytics_dashboard.pbix`](./ecommerce_sales_analytics_dashboard.pbix)
 
----
-
 ##  Business Insights & Recommendations
 
 | Priority | Finding | Recommended Action |
@@ -78,15 +76,15 @@ File: [`ecommerce_sales_analytics_dashboard.pbix`](./ecommerce_sales_analytics_d
 
 
 ##  Repository Structure
-├── ecommerce_sales_analytics_raw.csv          # Raw dataset from Kaggle
-├── ecommerce_sales_cleaned.csv                 # Cleaned dataset (post-SQL processing)
-├── ecommerce_sales_dashboard.csv               # Dashboard-ready dataset
-├── sales_summary.csv                           # Aggregated summary table
-├── cleaning_and_eda.sql                        # SQL script: cleaning, EDA, CTEs, window functions
-├── ecommerce_sales_analytics_dashboard.pbix     # Power BI dashboard file
-├── KPI_Cards.png                                # Dashboard KPI cards screenshot
-├── Charts.png                                   # Dashboard charts/trends screenshot
-└── README.md                                    # Project documentation
+ecommerce_sales_analytics_raw.csv          # Raw dataset from Kaggle
+ecommerce_sales_cleaned.csv                 # Cleaned dataset (post-SQL processing)
+ecommerce_sales_dashboard.csv               # Dashboard-ready dataset
+sales_summary.csv                           # Aggregated summary table
+cleaning_and_eda.sql                        # SQL script: cleaning, EDA, CTEs, window functions
+ecommerce_sales_analytics_dashboard.pbix     # Power BI dashboard file
+KPI_Cards.png                                # Dashboard KPI cards screenshot
+Charts.png                                   # Dashboard charts/trends screenshot
+README.md                                    # Project documentation
 
 
 ##  Author
