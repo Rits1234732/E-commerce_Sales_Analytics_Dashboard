@@ -98,4 +98,5 @@ LICENSE
 
 ##  Author
 **Ritika** - Final-year Integrated M.Tech, Geophysical Technology, IIT Roorkee
+
 *Open to Business Analyst / Data Analytics / Product roles*
